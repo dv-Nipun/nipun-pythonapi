@@ -1,1 +1,27 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore generated password files
+passwords.txt
+
+# Ignore virtual environment directories
+venv/
+env/
+.env/
+
+# Ignore any compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+
+# Ignore any other build or temporary files
+build/
+dist/
+*.egg-info/
+*.pyc
+
+
+# Ignore any log files
+*.log
 
