@@ -1,20 +1,30 @@
 # nipun-pythonapi
 # Simple API Server
 
-This is a simple Python API server using `http.server` and `socketserver` modules. The server responds with "Pong" when accessed at `/ping`.
+This is a simple API server written in Python that provides two endpoints: `/ping` and `/password`. The `/ping` endpoint responds with "Pong" when accessed, and the `/password` endpoint generates and returns a random password using a custom password generation library.
+## How to Run the Server
 
-## Usage
+1. Install Python if you haven't already (version 3.x is recommended).
+2. Clone this repository to your local machine.
+3. Navigate to the project directory.
 
-1. Clone the repository to your local machine.
-2. Run the `main.py` script to start the API server on `http://localhost:8080`.
-3. Access the API at `http://localhost:8080/ping` to get a "Pong" response.
+4. Install the required library for password generation. (Make sure you have the `passwordP` library installed or provide instructions to install it.)
 
-## How to Run
+5. Run the server by executing the following command:
+6. The server will start running on `http://localhost:8080/`.
+## Available Endpoints
 
-    1.Make sure you have Python installed on your system.
-    2.Save the server.py file to your desired directory.
-    3.Open a terminal or command prompt and navigate to the directory where server.py is saved.
-    4.Run the server with the following command:
-    5.The server will start running, and you can access it by opening your web browser and navigating to http://localhost:8080.
-    6.To test the /ping URL, access http://localhost:8080/ping.
+### `/ping`
+- Method: GET
+- Response: "Pong"
+
+### `/password`
+- Method: GET
+- Response: Randomly generated password string
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
 
